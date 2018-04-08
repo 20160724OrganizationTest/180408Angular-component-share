@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { Chaild01Component } from './parent/chaild01/chaild01.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { LinkItemsComponent } from './link-items/link-items.component';
+import { InputOutputComponent } from './input-output/input-output.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    Chaild01Component
+    Chaild01Component,
+    LinkItemsComponent,
+    InputOutputComponent
   ],
   imports: [
     BrowserModule,

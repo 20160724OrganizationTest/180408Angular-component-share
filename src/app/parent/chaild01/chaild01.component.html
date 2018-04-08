@@ -1,3 +1,12 @@
 <p>
   chaild01 works!
 </p>
+
+<app-link-items  (onclick)="selectLinkIndex($event)" [currentLinkIndex]="currentLinkIndex"></app-link-items>
+
+<div class="content" *ngIf="contentFlag[0]">
+  content01
+</div>
+<div class="content" *ngIf="contentFlag[1]">
+  content02
+</div>
