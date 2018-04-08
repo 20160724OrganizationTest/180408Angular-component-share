@@ -7,3 +7,8 @@
     z-index: 2;
     position: relative;
 }
+
+.box {
+    border: 2px solid pink;
+    padding: 10;
+}

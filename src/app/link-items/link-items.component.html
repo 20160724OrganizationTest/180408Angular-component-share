@@ -2,4 +2,8 @@
   <li class="item" *ngFor="let item of items; index as i">
     <a (click)="onclick($event, i)" [class.active]="item.current" class="link">{{item.text}}</a>
   </li>
+
+  <li class="component_name">
+    link-items
+  </li>
 </ul>
