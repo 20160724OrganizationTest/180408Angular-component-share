@@ -11,6 +11,7 @@
 ``currentLinkIndex,selectLinkIndex``
 
 複数のコンポーネントからなる、タブのサンプル。
-<img alt=”画面画像” src=”https://raw.github.com/wiki/20160724OrganizationTest/180408Angular-component-share/images/Angular-component-share.png” />
+
+![画面画像](https://raw.github.com/wiki/20160724OrganizationTest/180408Angular-component-share/images/Angular-component-share.png)
 
 
