@@ -1,12 +1,25 @@
 <p>
   chaild01 works!
 </p>
+<!--
+  selectLinkIndexの変数の変更を監視する
+  変更されたら、getCurrentIndex関数を動かす。
+  (selectLinkIndex)="getCurrentIndex($event)"
 
-<app-link-items  (onclick)="selectLinkIndex($event)" [currentLinkIndex]="currentLinkIndex"></app-link-items>
+  currentLinkIndexの変数の変更を監視する。
+  [currentLinkIndex]="currentLinkIndex
+-->
+<app-link-items (selectLinkIndex)="getCurrentIndex($event)" [currentLinkIndex]="currentLinkIndex"></app-link-items>
 
 <div class="content" *ngIf="contentFlag[0]">
   content01
 </div>
 <div class="content" *ngIf="contentFlag[1]">
   content02
+</div>
+<div class="content" *ngIf="contentFlag[2]">
+  content03
+</div>
+<div class="content" *ngIf="contentFlag[3]">
+  content04
 </div>

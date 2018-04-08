@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-// import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-link-items',
@@ -8,7 +7,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class LinkItemsComponent implements OnInit {
 
+  // 親から　currentLinkIndex を取得する
   @Input() currentLinkIndex: number;
+  // 親へ渡すように selectLinkIndex 関数を宣言
   @Output() selectLinkIndex = new EventEmitter<number>();
 
   items = [
@@ -21,6 +22,16 @@ export class LinkItemsComponent implements OnInit {
       id: 2,
       text: 'A02',
       current: false
+    },
+    {
+      id: 3,
+      text: 'A03',
+      current: false
+    },
+    {
+      id: 4,
+      text: 'A04',
+      current: false
     }
   ];
 
@@ -30,10 +41,11 @@ export class LinkItemsComponent implements OnInit {
     if ( i === this.currentLinkIndex) {
       return false;
     }
-    this.selectLinkIndex.emit(i);
+
     this.items[this.currentLinkIndex].current = false;
     this.items[i].current = true;
-    this.currentLinkIndex = i;
+    // 親へ i 引数を渡す(selectLinkIndex)
+    this.selectLinkIndex.emit(i);
   }
 
   ngOnInit() {
