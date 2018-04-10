@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class Chaild01Component implements OnInit {
 
   currentLinkIndex: number;
-  contentFlag = [true, false];
+  contentFlag = [true, false, false, false];
 
   constructor() { }
 
